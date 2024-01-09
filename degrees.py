@@ -115,6 +115,7 @@ def shortest_path(source, target):
                     return returnSolution(child)
                 frontier.add(child)
 
+
 def returnSolution(node):
     moviesIds = []
     peopleIds = []
@@ -125,6 +126,7 @@ def returnSolution(node):
     moviesIds.reverse()
     peopleIds.reverse()
     return list(zip(moviesIds, peopleIds))
+
 
 def person_id_for_name(name):
     """
